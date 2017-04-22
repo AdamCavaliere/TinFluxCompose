@@ -17,7 +17,7 @@ services:
     volumes:
       - tinflux-volume:/var/lib/influxdb
   influx_setup:
-    image: "tintri_pulldata"
+    image: "airedale/tintri_pulldata"
     depends_on:
       - "influx_data"
     env_file: 
