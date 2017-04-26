@@ -12,8 +12,6 @@ services:
       - tinflux-volume:/var/lib/grafana
   influx_data:
     image: "influxdb"
-    ports:
-      - "8086:8086"
     volumes:
       - tinflux-volume:/var/lib/influxdb
   influx_setup:
